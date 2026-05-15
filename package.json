@@ -1,0 +1,25 @@
+{
+  "name": "@mcp-widget/mcp-claude-code",
+  "version": "0.0.1",
+  "description": "MCP server wrapping the local Claude Code CLI",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "mcp-claude-code": "./dist/index.js"
+  },
+  "files": ["dist", "widget.manifest.json"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@mcp-widget/manifest-schema": "*",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

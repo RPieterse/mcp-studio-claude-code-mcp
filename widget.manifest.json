@@ -1,0 +1,30 @@
+{
+  "manifest_version": 1,
+  "id": "dev.mcpwidget.claude_code",
+  "name": "ClaudeCode",
+  "version": "0.0.1",
+  "description": "Drive Claude Code on the local machine — read files, run claude in a project, and apply edits.",
+  "mcp": {
+    "transport": "stdio",
+    "command": "node",
+    "args": ["./dist/index.js"]
+  },
+  "install": [
+    { "shell": "npm install" },
+    { "shell": "npm run build" }
+  ],
+  "auth": { "type": "none" },
+  "permissions": {
+    "filesystem": ["~"],
+    "network": []
+  },
+  "quick_commands": [
+    {
+      "trigger": "claude",
+      "description": "Run a Claude Code prompt in the git workspace",
+      "tool": "run",
+      "arg_key": "prompt",
+      "args": { "cwd": "${storage.dev.mcpwidget.git.active_workspace_path}" }
+    }
+  ]
+}
