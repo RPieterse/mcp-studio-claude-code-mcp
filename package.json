@@ -7,7 +7,10 @@
   "bin": {
     "mcp-claude-code": "./dist/index.js"
   },
-  "files": ["dist", "widget.manifest.json"],
+  "files": [
+    "dist",
+    "widget.manifest.json"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
@@ -17,7 +20,6 @@
     "@modelcontextprotocol/sdk": "^1.29.0"
   },
   "devDependencies": {
-    "@mcp-widget/manifest-schema": "*",
     "@types/node": "^20.12.7",
     "typescript": "^5.4.5",
     "vitest": "^1.6.0"
