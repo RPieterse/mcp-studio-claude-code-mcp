@@ -2,7 +2,7 @@
   "manifest_version": 1,
   "id": "dev.mcpwidget.claude_code",
   "name": "ClaudeCode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Drive Claude Code on the local machine — read files, run claude in a project, and apply edits.",
   "mcp": {
     "transport": "stdio",
