@@ -24,7 +24,8 @@
       "description": "Run a Claude Code prompt in the git workspace",
       "tool": "run",
       "arg_key": "prompt",
-      "args": { "cwd": "${storage.dev.mcpwidget.git.active_workspace_path}" }
+      "args": { "cwd": "${storage.dev.mcpwidget.git.active_workspace_path}" },
+      "platforms": ["desktop", "cli"]
     }
   ]
 }
